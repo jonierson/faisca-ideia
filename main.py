@@ -3,7 +3,7 @@ import streamlit as st
 from groq import Groq
 
 # Tenta carregar a API_KEY a partir do secrets
-api_key = "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"
+api_key = "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"
 
 if not api_key:
     st.error("⚠️ API_KEY não carregada. Verifique se ela está configurada no secrets do Streamlit Cloud.")
@@ -185,4 +185,5 @@ if st.button("Gerar Ideias de Projetos", type="primary"):
             st.markdown(response)
         else:
             st.warning("Não foi possível gerar ideias. Tente refinar suas respostas ou tente novamente mais tarde.")
+
 
